@@ -21,30 +21,39 @@ void main() {
           padding: EdgeInsets.all(10),
           child: 
        // mainAxisAlignment:  MainAxisAlignment.spaceAroundly,
+       //     Padding(
           Column(
             children: [
               Row(
+                 mainAxisAlignment: MainAxisAlignment.spaceEvenly, 
                 children: [
-                  Container(
+                 Container(
                     height: 150,
                     width: 200,
-                    decoration: BoxDecoration(color: Color.fromARGB(255, 22, 228, 39), boxShadow: [
-                      BoxShadow(
-                          blurRadius: 8,
-                          spreadRadius: 2,
-                          offset: Offset(2, 2),
-                          color: Colors.black)
-                    ]),
+                    decoration: BoxDecoration(
+                        color: Color.fromARGB(255, 113, 37, 201),
+                        image: DecorationImage(
+                          image: NetworkImage(
+                              "https://images.pexels.com/photos/1289500/pexels-photo-1289500.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"),
+                          fit: BoxFit.fill,
+                        ),
+                        boxShadow: [
+                          BoxShadow(
+                              blurRadius: 8,
+                              spreadRadius: 2,
+                              offset: Offset(2, 2),
+                              color: Colors.black)
+                        ]),
                   ),
                   Stack(),
                   Container(
                     height: 150,
                     width: 200,
                     decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 21, 230, 66),
+                        color: Color.fromARGB(255, 113, 37, 201),
                         image: DecorationImage(
                           image: NetworkImage(
-                              "https://images.pexels.com/photos/849835/pexels-photo-849835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"),
+                              "https://images.pexels.com/photos/2393821/pexels-photo-2393821.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"),
                           fit: BoxFit.fill,
                         ),
                         boxShadow: [
@@ -60,12 +69,52 @@ void main() {
               const SizedBox(
                 height: 10,
               ),
-              Row(
+               Row(
+                 mainAxisAlignment: MainAxisAlignment.spaceEvenly, 
                 children: [
                   Container(
                     height: 150,
                     width: 200,
-                    decoration: BoxDecoration(color: Color.fromARGB(255, 17, 230, 81), boxShadow: [
+                    decoration: BoxDecoration(color: Color.fromARGB(255, 113, 37, 201), 
+                    image:DecorationImage(
+                    image :NetworkImage("https://images.pexels.com/photos/30840781/pexels-photo-30840781/free-photo-of-luxury-car-in-scenic-spanish-beach-sunset.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+                    ,fit: BoxFit.fill,
+                    ),boxShadow: [
+                      BoxShadow(
+                          blurRadius: 8,
+                          spreadRadius: 2,
+                          offset: Offset(2, 2),
+                          color: Colors.black)
+                    ]),
+                  ),
+                  Stack(),
+                  Container(
+                    height: 150,
+                    width: 200,
+                    decoration: BoxDecoration(
+                        color: Color.fromARGB(255, 113, 37, 201),
+                        image: DecorationImage(
+                          image: NetworkImage(
+                              "https://images.pexels.com/photos/849835/pexels-photo-849835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"),
+                          fit: BoxFit.fill,
+                        ),
+                        boxShadow: [
+                          BoxShadow(
+                              blurRadius: 8,
+                              spreadRadius: 2,
+                              offset: Offset(2, 2),
+                              color: Colors.black)
+                        ]),
+                  ),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly, 
+                children: [
+                  Container(
+                    height: 150,
+                    width: 200,
+                    decoration: BoxDecoration(color: Color.fromARGB(255, 113, 37, 201), boxShadow: [
                       BoxShadow(
                           blurRadius: 8,
                           spreadRadius: 2,
